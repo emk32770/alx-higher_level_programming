@@ -1,0 +1,2 @@
+-- Display tables
+SHOW TABLES;
