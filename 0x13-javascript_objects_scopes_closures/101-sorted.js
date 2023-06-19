@@ -1,13 +1,12 @@
 #!/usr/bin/node
+const direc = require('./101-data.js').dict;
+const ndix = {};
 
-const dict = require('./101-data').dict;
-const list = {};
-
-for (const item in dict) {
-	if (!(dict[item] in list)) {
-		list[dict[item]] = [item];
-	} else {
-		list[dict[item]].push(item);
-	}
+for (const k in direc) {
+  if (direc[k] in ndix) {
+    ndix[direc[k]].push(k);
+  } else {
+    ndix[direc[k]] = [k];
+  }
 }
-console.log(list);
+console.log(ndix);
