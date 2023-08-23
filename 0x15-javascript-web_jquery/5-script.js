@@ -1,4 +1,3 @@
-const $ = window.$;
-$('DIV#add_item').click(function () {
-  $('UL.my_list').append('<li>Item</li>');
+$('DIV#add_item').click(()=>{
+    $('UL.my_list').append('<li>Item</li>');
 });
